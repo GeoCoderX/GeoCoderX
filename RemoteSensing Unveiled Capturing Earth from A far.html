@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom CSS file for premium styling -->
+
+    <style>
+        .special-link:hover {
+            color: rgb(252, 252, 252) !important;
+            background-color: black !important;
+        }
+
+        .no-underline a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .blog-content {
+            width: 70%;
+            float: left;
+        }
+
+        .share-icons {
+            position: fixed;
+            top: 50%;
+            right: -60px;
+            transform: translateY(-50%);
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            transition: right 0.3s ease;
+        }
+
+        .share-icons.active {
+            right: 20px;
+        }
+
+        .share-icons a {
+            display: block;
+            margin-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .share-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+    <title>RemoteSensing Unveiled: Capturing Earth from Afar</title>
+</head>
+
+<body>
+    <header data-bs-theme="dark ">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand ml-3" href="index.html">GeoCoderX</a>
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 mx-5">
+                        <li class="nav-item">
+                            <a class="nav-link special-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link special-link" href="course.html">Courses</a>
+                        </li>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link special-link dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Literature
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item special-link" href="GIS.html">Geographic Information
+                                            System</a></li>
+                                    <li><a class="dropdown-item special-link" href="#">Remote Sensing</a></li>
+                                    <li><a class="dropdown-item special-link" href="#">Urban Tourism</a></li>
+                                    <li><a class="dropdown-item special-link" href="#">Physical Geography</a></li>
+                                    <li><a class="dropdown-item special-link" href="#">Commercial Geography</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link special-link" href="Articles.html">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link special-link" href="Blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link special-link" href="about.html">About Us</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex " role="search">
+                        <input class="form-control mx-3" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button type="button" class="btn btn-outline-warning mx-3 no-underline "><a href="about.html">About
+                  Us</a></button> -->
+                        <button class="btn btn-outline-info text-white mr-3 " type="submit">Search</button>
+                    </form>
+                    <!-- <button type="button" class="btn btn-info mx-3">About us</button> -->
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header -->
+    <header class="header text-center py-5 ">
+        <div class="container">
+            <h1 class="display-4">RemoteSensing Unveiled: Capturing Earth from Afar</h1>
+            <!-- <p class="lead"></p> -->
+            <p class="text-center text-muted">Published on August 25, 2023</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <img src="https://gisgeography.com/wp-content/uploads/2015/11/What-Is-Remote-Sensing-1.jpg"
+                        class="img-fluid rounded mb-4" alt="Remote Sensing">
+                    <h2>The Magic of Remote Sensing</h2>
+                    <p><b>Remote sensing</b> is like a cosmic lens that grants us the ability to view Earth from a
+                        perspective that was once only attainable by astronauts. This technology involves gathering data
+                        about our planet's surface without direct physical contact. By deploying satellites, aircraft,
+                        and even drones, we can capture images, measure radiation, and collect a plethora of data points
+                        that unveil the mysteries hidden in plain sight.p>
+
+                        <!-- More content here -->
+
+                    <h2>From Pixels to Insights</h2>
+                    <p>The applications of remote sensing are as diverse as the colors of Earth itself. Here are some
+                        key domains where this technology works its magic:</p>
+                    <h3>Environmental Monitoring</h3>
+                    <p>Remote sensing aids environmentalists in tracking changes in land cover, deforestation rates, and
+                        even pollution levels. These insights are invaluable for formulating strategies to preserve our
+                        natural world.</p>
+                    <h3>Agriculture and Crop Management</h3>
+                    <p>Farmers benefit from remote sensing by receiving real-time data on crop health, soil moisture,
+                        and temperature. This information empowers them to make informed decisions, increase yields, and
+                        optimize resource use.</p>
+                    <h3>Disaster Assessment and Management</h3>
+                    <p>In the aftermath of disasters, remote sensing plays a crucial role. By capturing high-resolution
+                        images of affected areas, responders can assess damage, plan relief efforts, and ensure a swift
+                        recovery.</p>
+                    <h3>Urban Planning</h3>
+                    <p>City planners employ remote sensing to analyze urban sprawl, traffic patterns, and population
+                        density. These insights are instrumental in designing sustainable, efficient urban environments.
+                    </p>
+                    <h2>The Invisible Waves: Technologies Behind the Scenes</h2>
+                    <p>Remote sensing relies on a symphony of invisible waves, ranging from visible light to microwaves
+                        and beyond. These waves bounce off or interact with the Earth's surface, conveying valuable
+                        information to sensors onboard satellites. The data collected is then processed and transformed
+                        into vivid images and detailed maps, granting us a bird's-eye view of our dynamic planet.</p>
+                </div>
+                <!-- Sidebar with About and Author sections -->
+                <div class="col-lg-4">
+                    <div class="about-section bg-light p-4 mb-4">
+                        <h3 class="mb-3">About Remote Sensing</h3>
+                        <p class="text-muted">In an age where technology transcends boundaries, the art of capturing
+                            Earth's intricate details from a distance has taken center stage. Remote sensing, a
+                            fascinating blend of science and innovation, has revolutionized the way we observe and
+                            comprehend our planet. </p>
+                    </div>
+
+                    <div class="author-section bg-light p-4 mb-4">
+                        <img src="Images/Asad.jpg" class="img-fluid rounded-circle mb-3" alt="Author">
+                        <h4>Author: Asad Maqsoom</h4>
+                        <p class="text-muted">Geospatial Analyst with expertise in GIS, remote sensing, and cartography.
+                            Master's
+                            degree holder in Geography, currently pursuing Mphil. Experienced with prestigious
+                            institutions like
+                            Pakistan Meteorological Department and World Health Organization. Published work includes
+                            impactful
+                            land-use analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 text-center mt-3">
+                    <p><i>To share this blog, click the 'Share' button.</i></p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="share-icons" id="shareIcons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/whatsappphonenumber"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="text-center mt-3">
+                        <button class="btn btn-primary" id="toggleIcons">Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The rest of your content -->
+        </div>
+        </div>
+
+        <!-- Recent Articles -->
+        <div class="recent-articles bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Recent Articles</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <!-- <img src="article1.jpg" class="card-img-top" alt="Article 1"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Geography Insightful: Discovering the World One Place at a Time
+                                </h5>
+                                <p class="card-text"> In this blog post, we embark on a journey to unveil the
+                                    significance of geography, its diverse branches, and the insights it offers into the
+                                    tapestry of our world.</p>
+                                <a href="4th_blog.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <!-- <img src="article2.jpg" class="card-img-top" alt="Article 2"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">EcoAware Insights: Navigating the Environmental Landscape</h5>
+                                <p class="card-text">EcoAware Insights: Unveiling the layers of environmental insight to
+                                    empower you with the knowledge needed for a greener future.</p>
+                                <a href="first_blog.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <!-- <img src="article3.jpg" class="card-img-top" alt="Article 3"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">GIS Insights: Mapping the Digital Landscape</h5>
+                                <p class="card-text">Explore the dynamic realm of GIS Insights: Mapping the Digital
+                                    Landscape, where
+                                    we unravel the power of Geographic Information Systems, their myriad applications
+                                    across industries, and
+                                    the art of spatial storytelling that breathes life into data.</p>
+                                <a href="3rd_blog.html" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- The rest of your content -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#toggleIcons").click(function () {
+                $("#shareIcons").toggleClass("active");
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
